@@ -9,3 +9,4 @@ Network Access -> IP Access List ->
 
 Connect ->  Connect your application
 
+create database:"merng", create collection: "posts"
