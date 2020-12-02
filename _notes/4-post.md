@@ -16,3 +16,16 @@ Add resolver for post
 ```
 
 ```
+
+
+Create Post
+```
+mutation createPost{
+  createPost(body:"new post"){
+    id
+    body
+    craeteAt
+    username
+  }
+}
+```
