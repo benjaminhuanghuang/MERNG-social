@@ -6,7 +6,6 @@ const {
   validateRegisterInput,
   validateLoginInput
 } = require('../../util/validators');
-
 const { SECRET_KEY } = require('../../config');
 const User = require('../../models/User');
 
@@ -47,7 +46,7 @@ module.exports = {
       const token = generateToken(user);
 
       return {
-        ...user._doc,  
+        ...user._doc,
         id: user._id,
         token
       };
