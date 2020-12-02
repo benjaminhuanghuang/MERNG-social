@@ -46,7 +46,7 @@ mutation {
 Login
 ```
 mutation {
-  login(username:"ben", password:"123456)
+  login(username:"ben", password:"123456")
   {
     id
     email

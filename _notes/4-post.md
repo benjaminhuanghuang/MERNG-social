@@ -24,7 +24,7 @@ mutation createPost{
   createPost(body:"new post"){
     id
     body
-    craeteAt
+    createdAt
     username
   }
 }
