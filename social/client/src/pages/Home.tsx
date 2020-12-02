@@ -9,9 +9,11 @@ import { FETCH_POSTS_QUERY } from "../util/graphql";
 
 function Home() {
   const { user } = useContext(AuthContext);
+  const a = useQuery(FETCH_POSTS_QUERY);
+  console.log(a);
   const {
     loading,
-    data: { getPosts: posts },
+    data,
   }: any = useQuery(FETCH_POSTS_QUERY);
 
   return (
@@ -29,8 +31,8 @@ function Home() {
           <h1>Loading posts..</h1>
         ) : (
           <Transition.Group>
-            {posts &&
-              posts.map((post: any) => (
+            {data.getPosts &&
+              data.getPosts.map((post: any) => (
                 <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
                   <PostCard post={post} />
                 </Grid.Column>
