@@ -14,6 +14,8 @@ const httpLink = createHttpLink({
   uri: "http://localhost:8964",
 });
 
+
+// Add token automatically for each request
 const authLink = setContext(() => {
   const token = localStorage.getItem("jwtToken");
   return {

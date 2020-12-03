@@ -1,0 +1,14 @@
+## Server
+Heroku
+
+
+## Client
+Netlify
+
+
+
+
+
+
+
+
